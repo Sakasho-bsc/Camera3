@@ -136,7 +136,7 @@ public class CameraActivity extends Activity {
                 File f = new File(dir,"img1_1.jpg");
                 FileOutputStream fos = new FileOutputStream(f);
                 bitmap.compress(Bitmap.CompressFormat.JPEG,100,fos);
-                Toast.makeText(getApplicationContext(),"写真を保存しました",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"写真を保存",Toast.LENGTH_SHORT).show();
                 fos.close();
                 camera.startPreview();
 
