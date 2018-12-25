@@ -17,7 +17,6 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -28,8 +27,6 @@ public class CameraActivity extends Activity {
 
     private SurfaceView mySurfaceView;
     private Camera myCamera;
-
-    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,8 +43,7 @@ public class CameraActivity extends Activity {
         button.setOnClickListener(new TakePictureClickListener());
         mySurfaceView.setOnTouchListener(new AutoFocus());
 
-        img = (ImageView)findViewById(R.id.img);
-        img.setVisibility(View.INVISIBLE);
+
 
     }
 
