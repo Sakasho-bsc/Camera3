@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 public class MainActivity extends Activity {
-
     FrameLayout FL1;
     Button B1;
 
